@@ -3,6 +3,12 @@ variable "aws_region" {
   default = "us-east-1"
 }
 
+variable "environment" {
+  type        = string
+  description = "Environment for deployment"
+  default     = "dev"
+}
+
 variable "vpc_name" {
   type    = string
   default = "demo_vpc"
@@ -27,4 +33,22 @@ variable "public_subnets" {
     "public_subnet_2" = 2
     "public_subnet_3" = 3
   }
+}
+
+variable "variables_sub_cidr" {
+  default     = "10.0.202.0/24"
+  description = "CIDR Block for the Variables Subnet"
+  type        = string
+}
+
+variable "variables_sub_az" {
+  default     = "us-east-1a"
+  description = "Availability Zone used Variables Subnet"
+  type        = string
+}
+
+variable "variables_sub_auto_ip" {
+  default     = true
+  description = "Set Automatic IP Assignment for Variables Subnet"
+  type        = bool
 }
