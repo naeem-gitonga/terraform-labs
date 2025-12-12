@@ -24,13 +24,13 @@ terraform {
   
   }
 
-  # backend "http" {
-  #   address        = "http://localhost:5001/terraform_state/4cdd0c76-d78b-11e9-9bea-db9cd8374f3a"
-  #   lock_address   = "http://localhost:5001/terraform_lock/4cdd0c76-d78b-11e9-9bea-db9cd8374f3a"
-  #   lock_method    = "PUT"
-  #   unlock_address = "http://localhost:5001/terraform_lock/4cdd0c76-d78b-11e9-9bea-db9cd8374f3a"
-  #   unlock_method  = "DELETE"
-  # }
+  backend "http" {
+    address        = "http://localhost:5001/terraform_state/4cdd0c76-d78b-11e9-9bea-db9cd8374f3a"
+    lock_address   = "http://localhost:5001/terraform_lock/4cdd0c76-d78b-11e9-9bea-db9cd8374f3a"
+    lock_method    = "PUT"
+    unlock_address = "http://localhost:5001/terraform_lock/4cdd0c76-d78b-11e9-9bea-db9cd8374f3a"
+    unlock_method  = "DELETE"
+  }
   
   # backend "s3" {
   #   bucket = "ng-tf-lab-backend"
@@ -40,10 +40,10 @@ terraform {
   #   encrypt = true
   # }
 
-  backend "remote" {
-    hostname     = "app.terraform.io"
-    organization = "my-test-org-naeem-gtng"
-    workspaces { name = "my-new-shiney-workspace" }
+  # backend "remote" {
+  #   hostname     = "app.terraform.io"
+  #   organization = "my-test-org-naeem-gtng"
+  #   workspaces { name = "my-new-shiney-workspace" }
 
-  }
+  # }
 }
