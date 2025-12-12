@@ -1,60 +1,60 @@
-variable "aws_region" {
-  type    = string
-  default = "us-east-1"
-}
+# variable "aws_region" {
+#   type    = string
+#   default = "us-east-1"
+# }
 
-variable "environment" {
-  type        = string
-  description = "Environment for deployment"
-  default     = "dev"
-}
+# variable "environment" {
+#   type        = string
+#   description = "Environment for deployment"
+#   default     = "dev"
+# }
 
-variable "vpc_name" {
-  type    = string
-  default = "demo_vpc"
-}
+# variable "vpc_name" {
+#   type    = string
+#   default = "demo_vpc"
+# }
 
-variable "vpc_cidr" {
-  type    = string
-  default = "10.0.0.0/16"
-}
+# variable "vpc_cidr" {
+#   type    = string
+#   default = "10.0.0.0/16"
+# }
 
-variable "private_subnets" {
-  default = {
-    "private_subnet_1" = 1
-    "private_subnet_2" = 2
-    "private_subnet_3" = 3
-  }
-}
+# variable "private_subnets" {
+#   default = {
+#     "private_subnet_1" = 1
+#     "private_subnet_2" = 2
+#     "private_subnet_3" = 3
+#   }
+# }
 
-variable "public_subnets" {
-  default = {
-    "public_subnet_1" = 1
-    "public_subnet_2" = 2
-    "public_subnet_3" = 3
-  }
-}
+# variable "public_subnets" {
+#   default = {
+#     "public_subnet_1" = 1
+#     "public_subnet_2" = 2
+#     "public_subnet_3" = 3
+#   }
+# }
 
-variable "variables_sub_cidr" {
-  default     = "10.0.202.0/24"
-  description = "CIDR Block for the Variables Subnet"
-  type        = string
-}
+# variable "variables_sub_cidr" {
+#   default     = "10.0.202.0/24"
+#   description = "CIDR Block for the Variables Subnet"
+#   type        = string
+# }
 
-variable "variables_sub_az" {
-  default     = "us-east-1a"
-  description = "Availability Zone used Variables Subnet"
-  type        = string
-}
+# variable "variables_sub_az" {
+#   default     = "us-east-1a"
+#   description = "Availability Zone used Variables Subnet"
+#   type        = string
+# }
 
-variable "variables_sub_auto_ip" {
-  default     = true
-  description = "Set Automatic IP Assignment for Variables Subnet"
-  type        = bool
-}
+# variable "variables_sub_auto_ip" {
+#   default     = true
+#   description = "Set Automatic IP Assignment for Variables Subnet"
+#   type        = bool
+# }
 
-variable "key_name" {
-  default     = "aws/ec2"
-  type        = string
-  description = "Key Name for EC2 Istance"
-}
+# variable "key_name" {
+#   default     = "aws/ec2"
+#   type        = string
+#   description = "Key Name for EC2 Istance"
+# }
