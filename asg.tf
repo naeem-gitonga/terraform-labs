@@ -26,5 +26,5 @@ module "autoscaling" {
 }
 
 output "asg_group_size" {
-    value = module.autoscaling.autoscaling_group_max_size
+  value = module.autoscaling.autoscaling_group_max_size
 }
