@@ -3,6 +3,7 @@ Just something I'm playing around with.
 
 FYI: terraform cloud credentials can be found at this path `/home/YOUR_NAME/.terraform.d/credentials.tfrc.json`
 
+
 ## Gotchas
 **RELEASE** your elastic IPs. They will cost you money if they are sitting idle. Terraform may not release them if you run a `terraform destroy`.
 

@@ -44,6 +44,5 @@ terraform {
   #   hostname     = "app.terraform.io"
   #   organization = "my-test-org-naeem-gtng"
   #   workspaces { name = "my-new-shiney-workspace" }
-
   # }
 }
